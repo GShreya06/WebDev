@@ -1,2 +1,2 @@
 # WebDev
-This repo contains some tutorials of web development.
+This Repository contains tutorials of web development.
