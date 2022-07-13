@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+            padding: 0;
+        }
+        body{
+            background-color: #b889d7;
+        }
+        .container{
+        background-color: lavenderblush;
+        border: 4px solid black;
+        /* we can set padding left ,right top and bottom and same for margin */
+        /* padding: 4px; */
+        /* padding-top: 79px; */
+        /* padding-bottom: 79px; */
+        /* padding : 45px 34px 23px 21px ;  */ /* padding top right bottom left */
+        padding: 34px 19px;/* padding: y(top/bottom) x(left/right); */
+        /* margin: 45px; */
+        margin-top: 34px;
+        margin-bottom: 45px;
+        margin-right: 122px;
+        margin-left: 344px;
+        border-radius: 23px;
+        width: 533px;
+        /* box sizing adjusts it according to width */
+
+    }
+    </style>
+    
+</head>
+<body>
+    <div class ="container">
+        <h1>First Paragraph</h1>
+    <p id="first" >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptatibus commodi eum enim fuga minus maxime totam a. Eius,
+    quasi neque illum quia soluta dolores saepe eaque illo nesciunt impedit 
+    magni odit quas ratione hic!</p>
+    </div>
+    <div class="container">
+        <h1>Secound Paragraph</h1>
+    <p id="secound">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptatibus commodi eum enim fuga minus maxime totam a. Eius,
+    quasi neque illum quia soluta dolores saepe eaque illo nesciunt impedit 
+    magni odit quas ratione hic!</p>
+    </div>
+    <div class="container">
+        <h1>Third Paragraph</h1>
+    <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Voluptatibus commodi eum enim fuga minus maxime totam a. Eius,
+    quasi neque illum quia soluta dolores saepe eaque illo nesciunt impedit 
+    magni odit quas ratione hic!</p>
+    </div>
+    
+</body>
+</html>

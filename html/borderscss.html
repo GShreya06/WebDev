@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders</title>
+    <style>
+        #firstpara{
+            background-color: lightpink;
+            height: 100px;
+            width: 455px;
+            border: 4px solid black ;
+            /*  
+            border-width: 4px;
+            border-color: black;
+            border-style: solid;*/
+            border-radius: 6px;
+        }
+        #secoundpara{
+            background-color: darkkhaki;
+            height: 100px;
+            width: 455px;
+            border-right: 4px solid darkblue;
+            border-top: 4px solid darkslateblue;
+            border-left: 4px solid purple;
+            border-bottom: 4px solid darkmagenta;
+            border-top-left-radius: 7px;
+            border-bottom-left-radius: 7px;
+        }
+        #thirdpara{
+            height: 500px;
+            width: 755px;
+            background-image: url('https://5.imimg.com/data5/ANDROID/Default/2022/3/JC/FN/II/3508627/product-jpeg-500x500.jpg');
+            border: 4px solid black ;
+            border-radius: 6px;
+            background-repeat: no-repeat;
+            /* background-position: 45px top;  //repeat x and y will make it repeat x and y axis */
+            /* background-position: center; */
+            /* background-position: 45px 23px; */
+            /* background-position: top center; */
+            background-position: center right;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is my First para</h1>
+    <p id="firstpara">This is our testing first para</p>
+
+    <h1>This is my Secound para</h1>
+    <p id="secoundpara">This is our testing Secound para</p>
+
+    <h1>This is my Third para</h1>
+    <p id="thirdpara">This is our testing third para</p>
+
+
+</body>
+</html>

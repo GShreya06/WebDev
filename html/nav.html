@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        .navbar{
+            background-color: black;
+            /* border: 3px solid black; */
+            border-radius: 40px
+            /* margin: 122px; */
+        }
+        .navbar ul{
+            overflow: auto; 
+            /* when we float somethong it overflows from parent that's why bg is not showing */
+        }
+        .navbar li{
+            float: left;
+            list-style-type: none; /* to remove bullet points disc */
+            width: 95px;
+            padding: 5px;
+            margin: 7px;
+            font-size: 22px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+        }
+        /* .navbar li a:hover{
+            background-color: linen;
+        } */
+        .search{
+            float: right;
+            padding: 12px 60px;
+        }
+        .navbar input{
+            border-radius: 14px;
+            padding: 3px 19px;
+            width: 129px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/displaycss.html" target="_blank">Home</a></li>
+                    <li><a href="#" target="_blank">About</a></li>
+                    <li><a href="#" target="_blank">Services</a></li>
+                    <li><a href="http://127.0.0.1:5500/form.html" target="_blank">Contact us</a></li>
+                    <div class="search">
+                        <input type="text" name="search" id="search" placeholder="Search Here">
+                    </div>
+                </ul>
+            </nav>
+        </nav>
+    </header>
+    
+</body>
+</html>
