@@ -27,11 +27,45 @@
             color: crimson;
             background-color: pink;
         }
+        h1{
+            color: black;
+            background-color: lightpink;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* If p is contained by li which is contained by div */
+        /* div li p{
+            color: lightcoral;
+            background-color: green;
+            font-weight: bold;
+
+        } */
+
+        /* div p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+        } */
+
+        /* For direct child :If p is right inside div */
+        /* div > p{
+            color: yellow;
+            background-color: green;
+            font-weight: bold;
+
+        } */
+
+        /* If the previous sibling is div or if p is right after div */
+        /* div + p{
+            color: wheat;
+             background-color: red;
+        } */
     </style>
 </head>
 <body>
     <!-- . for class and # for id-->
-    <h3>CSS selectors</h3>
+    
+    <h1>CSS selectors</h1>
     <p id="firstpara" >This is a simple paragraph to test selectors.</p>
     <p id="secoundpara" class="coralelement chocolateele">secound another paragraph</p>
     <div>
@@ -39,5 +73,17 @@
         <span>This is span</span>
     </div>
     <footer>This is footer </footer>
+
+    <h1>There are more selectors.</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another para under li</p></li>
+            </ul>
+            <p>This is a paragraph.</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
 </body>
 </html>
