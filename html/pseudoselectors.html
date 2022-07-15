@@ -33,6 +33,18 @@
             color: lightcoral;
             border: 4px solid black;
         }
+        /* This will apply css for 3rd child */
+        /* even child */
+        li:nth-child(2n+0){
+            color: tomato;
+        }
+        li:nth-child(even){
+            background-color: yellow;
+        }
+        /* odd child */
+        li:nth-child(2n+1){
+            color: green;
+        }
         
     </style>
 </head>
@@ -53,6 +65,9 @@
             <li class="item" id="item-3">Item3</li>
             <li class="item" id="item-4">Item4</li>
             <li class="item" id="item-5">Item5</li>
+            <li class="item" id="item-6">Item6</li>
+            <li class="item" id="item-7">Item7</li>
+            <li class="item" id="item-8">Item8</li>
         </ul>
     </div>
 
