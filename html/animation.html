@@ -26,30 +26,36 @@
             /* animation-delay: 2s; */
             /* animation-direction: alternate; */
 
+            /* These properties can be set using shorthand */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
             animation: ani 8s ease 0s infinite alternate forwards;
         }
-        @keyframes ani{
-            0%{
-                top:0px;
-                left:0px;
+
+        @keyframes ani {
+            0% {
+                top: 0px;
+                left: 0px;
 
             }
-            25%{
-                top:250px;
-                left:0px;
+
+            25% {
+                top: 250px;
+                left: 0px;
 
             }
-            75%{
-                top:250px;
-                left:250px;
+
+            75% {
+                top: 250px;
+                left: 250px;
             }
-            100%{
-                top:0px;
-                left:250px;
+
+            100% {
+                top: 0px;
+                left: 250px;
 
             }
         }
-        
+
         @keyframes ani1 {
             from {
                 width: 200px;
