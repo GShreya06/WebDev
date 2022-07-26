@@ -3,13 +3,18 @@
     /* grid-template-columns: 300px  auto 100px; */
     /* grid-template-columns: 300px 200px 100px; */
     /* grid-template-columns: 1fr 4fr 1fr; */
-    grid-template-columns: repeat(3,auto);
-    grid-gap: 2rem;
+    /* grid-template-columns: repeat(3,auto);
+    grid-gap: 2rem; */
+    grid-template-rows: 1fr 1fr 4fr;
+    grid-auto-rows: 2fr;
+    grid-template-columns: 1fr 4fr 2fr;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2,2fr);
 }
 .item{
     /* height: 100px;
     width: 100px; */
-    background-color: lightpink;
+    background-color: orange;
     padding: 32px;
     margin: 3px;
     border: 2px solid black;
