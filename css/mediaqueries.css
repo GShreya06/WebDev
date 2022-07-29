@@ -1,27 +1,107 @@
+.container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas:
+        'nav nav nav nav'
+        'section section section aside'
+        'footer footer footer footer'
+    ;
+}
+
 @media only screen and (max-width:300px) {
-    #box-1{
-        display: block;
+    body {
+
         background-color: cyan;
     }
-    
-}
-@media only screen  and (min-width:300px) and (max-width:500px) {
-    #box-2{
+
+    .container {
+        grid-template-areas:
+            'nav nav nav nav'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+        ;
+    }
+    span{
         display: block;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width:300px) and (max-width:500px) {
+    body {
         background-color: blueviolet;
     }
-    
-}
-@media only screen and (min-width:500px) and (max-width:800px) {
-    #box-3{
+
+    .container {
+        grid-template-areas:
+            'nav nav nav nav'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+        ;
+    }
+    span{
         display: block;
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (min-width:500px) and (max-width:800px) {
+    body {
         background-color: lightcoral;
     }
-    
-}
-@media only screen and  (min-width:800px) {
-    #box-4{
+
+    .container {
+        grid-template-areas:
+            'nav nav nav nav'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+        ;
+    }
+    span{
         display: block;
+        text-align: center;
+    }
+
+
+}
+
+@media only screen and (min-width:800px) {
+    body {
         background-color: lightgreen;
     }
+    span{
+        padding: 23px;
+    }
+}
+
+.bdr {
+    border: 2px solid black;
+    padding: 23px 12px;
+    background-color: wheat;
+
+}
+
+nav {
+    grid-area: nav;
+
+}
+
+section {
+    grid-area: section;
+
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
 }
