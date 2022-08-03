@@ -16,5 +16,10 @@
 // console.log("The value of num2-- is " + (num2--));
 // console.log("The value of --num2 is " + (--num2));
 
-var string = "Hello";
+var string = 'He"llo';
 console.log(string);
+var name ='JavaScript';
+var type='Programming Language';
+var temp= `${name} is a ${type} of web`;
+console.log(temp);
+
