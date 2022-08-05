@@ -18,8 +18,24 @@
 
 var string = 'He"llo';
 console.log(string);
-var name ='JavaScript';
-var type='Programming Language';
-var temp= `${name} is a ${type} of web`;
+var name = 'JavaScript';
+var type = 'Programming Language';
+var temp = `${name} is a ${type} of web`;
 console.log(temp);
+
+var len = name.length;
+console.log(`length of ${name} is ${len}`);
+
+console.log('Hello...\n"This is Testing code" ')
+
+// constructor
+var y = new String("Hello");
+console.log(y);
+
+
+
+
+
+
+
 

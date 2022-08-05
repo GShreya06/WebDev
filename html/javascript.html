@@ -12,6 +12,7 @@
 <body>
     <div class="container">
         <h1>This is a heading.</h1>
+        <div id="content1"></div>
         <div class="content">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius enim commodi ratione delectus velit aliquid.
             Odit voluptatem dicta iure perspiciatis quaerat cupiditate ducimus, voluptatibus maxime architecto doloribus
@@ -25,6 +26,10 @@
 
         </div>
     </div>
+    <script>
+        // Dynamically inserting js
+        document.getElementById('content1').outerHTML= "<h3>This is a sample text </h3>"
+    </script>
 </body>
 <!-- <script>
     // Write your java script here!
