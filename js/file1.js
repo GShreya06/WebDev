@@ -32,8 +32,38 @@ console.log('Hello...\n"This is Testing code" ')
 var y = new String("Hello");
 console.log(y);
 
+// String Functions
+var str="This is a string.";
+console.log(str);
 
+// First Occurence of substring
+var pos=str.indexOf('is');
+console.log(pos);
 
+// last occurence of substring
+var lpos=str.lastIndexOf('is');
+console.log(lpos);
+
+// SubString from a string
+// var substr = str.slice(1,9);
+// slice can take neg values but substring can't
+// var substr = str.substring(1,8);
+// var substr1 = str.substr(1,3);
+// console.log(substr1);
+
+var rep=str.replace('string','shreya');
+console.log(str);
+console.log(rep);
+
+console.log(str.toUpperCase());
+console.log(rep.toLowerCase());
+
+var newstring=str.concat('Hello');
+console.log(newstring);
+
+var wspace = "   this is   white space   ";
+console.log(wspace);
+console.log(wspace.trim());
 
 
 
