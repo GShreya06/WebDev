@@ -118,16 +118,16 @@ let employee = {
     channel: "python"
 }
 console.log(employee);
-// employee.name
-// employee['channel']
+employee.name
+employee['channel']
 
 
-// let names=[1,2,5,"hello",undefined];
-// let name2= new Array(1,2,3,4,4,7);//secound method
-// console.log(name2.length);
-// console.log(names[3]);
-// names.push("This is pushed");
-// console.log(names);
+let names=[1,2,5,"hello",undefined];
+let name2= new Array(1,2,3,4,4,7);//secound method
+console.log(name2.length);
+console.log(names[3]);
+names.push("This is pushed");
+console.log(names);
 
 let n = new Array(23);
 console.log(n)
@@ -153,4 +153,27 @@ function sum(a=5,b=4,c=7){
     return d;
 }
 console.log(sum());
+
+// Alert in JS
+// Alert in in-brower Javascript-Doesn't return anything
+alert("This is a message!");
+
+// Prompt in JS
+// If you want to ask something from user
+let naam=prompt("What is your name?","Guest");
+console.log(naam);
+
+// Confirm in JS
+let deletePost=confirm("Do you want to delete this post?");
+// console.log(deletePost);
+if(deletePost){
+    //to delete post
+    console.log("Your post has been Deleted!!!")
+}
+else{
+    //to cancel delete
+    console.log("Your post hasn't Deleted!!!")
+}
+
+
 
