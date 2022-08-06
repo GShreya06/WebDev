@@ -135,4 +135,22 @@ console.log(n)
 
 //Functions
 
+function greet(name,text="Good Day Ahead!"){
+    let rno=233;//local variable
+    console.log("Hello! "+ name+ "." + text);
+    console.log(name+", Your Room number is "+rno + "!");
+}
+let n1="Shreya";
+let n2="Purva";
+let text=" Have a Nice Day!";
+greet(n1,text);
+greet(n2);
+
+
+
+function sum(a=5,b=4,c=7){
+    let d=a+b+c;
+    return d;
+}
+console.log(sum());
 
