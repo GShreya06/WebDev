@@ -122,8 +122,8 @@ employee.name
 employee['channel']
 
 
-let names=[1,2,5,"hello",undefined];
-let name2= new Array(1,2,3,4,4,7);//secound method
+let names = [1, 2, 5, "hello", undefined];
+let name2 = new Array(1, 2, 3, 4, 4, 7);//secound method
 console.log(name2.length);
 console.log(names[3]);
 names.push("This is pushed");
@@ -135,45 +135,89 @@ console.log(n)
 
 //Functions
 
-function greet(name,text="Good Day Ahead!"){
-    let rno=233;//local variable
-    console.log("Hello! "+ name+ "." + text);
-    console.log(name+", Your Room number is "+rno + "!");
+function greet(name, text = "Good Day Ahead!") {
+    let rno = 233;//local variable
+    console.log("Hello! " + name + "." + text);
+    console.log(name + ", Your Room number is " + rno + "!");
 }
-let n1="Shreya";
-let n2="Purva";
-let text=" Have a Nice Day!";
-greet(n1,text);
+let n1 = "Shreya";
+let n2 = "Purva";
+let text = " Have a Nice Day!";
+greet(n1, text);
 greet(n2);
 
 
 
-function sum(a=5,b=4,c=7){
-    let d=a+b+c;
+function sum(a = 5, b = 4, c = 7) {
+    let d = a + b + c;
     return d;
 }
 console.log(sum());
 
 // Alert in JS
 // Alert in in-brower Javascript-Doesn't return anything
-alert("This is a message!");
+// alert("This is a message!");
 
 // Prompt in JS
 // If you want to ask something from user
-let naam=prompt("What is your name?","Guest");
-console.log(naam);
+// let naam = prompt("What is your name?", "Guest");
+// console.log(naam);
 
-// Confirm in JS
-let deletePost=confirm("Do you want to delete this post?");
-// console.log(deletePost);
-if(deletePost){
-    //to delete post
-    console.log("Your post has been Deleted!!!")
+// // Confirm in JS
+// let deletePost = confirm("Do you want to delete this post?");
+// // console.log(deletePost);
+// if (deletePost) {
+//     //to delete post
+//     console.log("Your post has been Deleted!!!")
+// }
+// else {
+//     //to cancel delete
+//     console.log("Your post hasn't Deleted!!!")
+// }
+
+//For loop
+// for (i = 0; i < 3; i++) {
+//     console.log(i);
+// }
+
+let friends = ["Rohan", "Rahul", "Deepti", "Pooja", "Kunal"];
+// for (let index = 0; index < friends.length; index++) {
+//     let element = friends[index];
+//     console.log("Hello Friend "+element+"!");
+// }
+
+// another approach
+// friends.forEach(function f(element){
+//     console.log("Hello Friend "+element+"!");
+// });
+
+// Another approach
+for (element of friends) {
+    console.log("Hello Friend " + element + "!");
+
 }
-else{
-    //to cancel delete
-    console.log("Your post hasn't Deleted!!!")
+
+// Use this loop to iterate over js obj
+let employee1 = {
+    name: "Shreya",
+    course: "B.sc.",
+    channel: "python"
+}
+for (key in employee1) {
+    console.log(`The ${key} of employee is ${employee[key]}`);
 }
 
+// While in js
+let i = 0;
+while (i < 4) {
+    console.log(`${i} is less than 4`);
+    i++;
+}
 
+// Do..While loop
+let j=5;
+do {
+    console.log(`${j} is less than 4 and we are inside do while loop!`);
+    j++;
 
+} while (j < 4);
