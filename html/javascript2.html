@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event & Listening to events</title>
+    <script src="../js/file2.js"></script>
+    <link rel="stylesheet" href="../css/js2.css">
+</head>
+
+<body>
+    <!-- Browerevents
+ click
+ contextmenu
+ mouseover/mouseout
+ mousedown / mouseup
+ mousemove 
+ form Event :submit
+focus
+DomContentloaded
+ transitioned
+     -->
+    <div class="container">
+        <h1>This is a heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim eius natus, dolor repellat iure
+            cumque illum
+            quo, corporis numquam nemo repudiandae quos, hic voluptate tempora non! Iste quae ipsa velit corporis illo
+            minus quia incidunt odio in, dolores nemo pariatur unde ut cupiditate officiis eos.</p>
+
+    </div>
+    <button id="btn" onclick="toggleHide()">
+        Show/Hide
+    </button>
+    <script>
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else {
+                para.style.display = 'block';
+
+            }
+        }
+        
+        
+        para.addEventListener('mouseover', function run() {
+            alert('Mouse inside');
+        });
+        para.addEventListener('mouseout', function run() {
+            alert('Mouse went outside');
+        });
+    </script>
+</body>
+
+</html>

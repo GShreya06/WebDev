@@ -12,8 +12,16 @@
 <body>
     <div class="container">
         <h1>This is a heading.</h1>
+        <div id="main" class="container">
+            <ul id="nav">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
         <div id="content1"></div>
-        <div class="content">
+        <div class="container">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius enim commodi ratione delectus velit aliquid.
             Odit voluptatem dicta iure perspiciatis quaerat cupiditate ducimus, voluptatibus maxime architecto doloribus
             ipsa odio autem. Ullam quis consequatur numquam, nobis dolorem corrupti hic, odit ad, minima nisi earum. In
@@ -28,7 +36,27 @@
     </div>
     <script>
         // Dynamically inserting js
-        document.getElementById('content1').innerHTML= "<h3>This is a sample text </h3>"
+        document.getElementById('content1').innerHTML = "<h3>This is a sample text </h3>"
+
+        // Navigating the Document-Object-Model
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav);
+
+        // classname can be same ...id name should be unique.
+        let containers = document.getElementsByClassName('container');
+        console.log(containers);
+
+        // Select a specific class or id
+        let sel = document.querySelector('.container');
+        console.log(sel);
+        let sel1 = document.querySelector('#nav');
+        console.log(sel1);
+        let sel2 = document.querySelector('#nav>li');
+        console.log(sel2);
+        let sel3 = document.querySelectorAll('#nav>li');
+        console.log(sel3);
     </script>
 </body>
 <!-- <script>
