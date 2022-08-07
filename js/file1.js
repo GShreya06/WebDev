@@ -215,9 +215,22 @@ while (i < 4) {
 }
 
 // Do..While loop
-let j=5;
+let j = 5;
 do {
     console.log(`${j} is less than 4 and we are inside do while loop!`);
     j++;
 
 } while (j < 4);
+
+// Event & Listening to events
+// Browerevents
+// click
+// contextmenu
+// mouseover/mouseout
+// mousedown / mouseup
+// mousemove 
+// form Event :submit
+// focus
+// DomContentloaded
+// transitioned
+
