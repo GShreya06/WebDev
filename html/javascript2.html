@@ -33,26 +33,57 @@ DomContentloaded
     <button id="btn" onclick="toggleHide()">
         Show/Hide
     </button>
-    <script>
-        function toggleHide() {
-            let btn = document.getElementById('btn');
-            let para = document.getElementById('para');
-            if (para.style.display != 'none') {
-                para.style.display = 'none';
-            }
-            else {
-                para.style.display = 'block';
+    <div id="container">
+        <h3>Time now is:</h3> <span id="time"> </span>
 
-            }
+    </div>
+    <script>
+        // function toggleHide() {
+        //     let btn = document.getElementById('btn');
+        //     let para = document.getElementById('para');
+        //     if (para.style.display != 'none') {
+        //         para.style.display = 'none';
+        //     }
+        //     else {
+        //         para.style.display = 'block';
+
+        //     }
+        // }
+        
+        // para.addEventListener('mouseover', function run() {
+        //     alert('Mouse inside');
+        // });
+        // para.addEventListener('mouseout', function run() {
+        //     alert('Mouse went outside');
+        // });
+
+        // Allows us to run the function once after the interval of the time
+        // setTimeout
+        // Allows us to run the function repetedly after the interval of the time
+        // clearTimeout
+
+        function greet(name){
+            console.log("Hello" +name);
         }
-        
-        
-        para.addEventListener('mouseover', function run() {
-            alert('Mouse inside');
-        });
-        para.addEventListener('mouseout', function run() {
-            alert('Mouse went outside');
-        });
+        // timeout=setTimeout(greet,5000);
+        // setTimeout(greet,5000,"Shreya");
+        // clearTimeout(timeout);
+
+        // setTimeout(greet(),5000); 
+        // Wrong as it doesn't require function call
+
+        // Intervalid=setInterval(greet,1000,"Shreya");
+        // clearInterval(Intervalid);
+    
+
+        function displaytime(){
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displaytime,1000);
+
+
     </script>
 </body>
 
